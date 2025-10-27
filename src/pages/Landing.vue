@@ -36,7 +36,7 @@
     <section class="relative z-10 flex flex-col justify-center items-center text-center px-4 pt-20 pb-16">
       <div class="max-w-3xl animate-fadeInUp">
         <h2 class="text-4xl font-bold md:text-5xl md:font-extrabold font-header text-gray-900">
-          Welcome to <span class="text-primary">Afuni's Tickets App</span>
+          Welcome to <span class="text-primary font-header">Afuni's Tickets App</span>
         </h2>
         <p class="mt-4 text-lg md:text-2xl text-gray-700">
           Manage your support tickets easily: create, track, and resolve requests
