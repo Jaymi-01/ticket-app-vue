@@ -1,7 +1,17 @@
 <template>
-  <section
-    class="relative bg-background min-h-screen flex flex-col justify-center items-center text-center overflow-hidden p-4"
-  >
+  <div class="relative bg-background min-h-screen overflow-hidden">
+    <!-- Header -->
+    <header class="relative z-20 bg-transparent backdrop-blur-sm shadow-sm animate-slideDown">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div class="flex justify-between items-center">
+          <h1 class="text-2xl md:text-3xl font-bold text-primary">
+            Afuni's Tickets
+          </h1>
+          
+        </div>
+      </div>
+    </header>
+
     <!-- Wave SVG -->
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -15,64 +25,284 @@
       ></path>
     </svg>
 
-    <!-- Decorative circles (CSS animation) -->
+    <!-- Decorative circles -->
     <div class="absolute inset-0 z-0 overflow-hidden">
-      <div
-        class="absolute w-56 h-56 bg-blue-400/40 rounded-full blur-2xl top-20 left-10 animate-bounce-slow"
-      ></div>
-      <div
-        class="absolute w-72 h-72 bg-indigo-500/40 rounded-full blur-2xl bottom-10 right-20 animate-bounce-slow"
-      ></div>
-      <div
-        class="absolute w-32 h-32 bg-sky-400/40 rounded-full blur-xl top-1/2 left-1/3 animate-bounce-slow"
-      ></div>
+      <div class="absolute w-56 h-56 bg-blue-400/40 rounded-full blur-2xl top-20 left-10 animate-float-1"></div>
+      <div class="absolute w-72 h-72 bg-indigo-500/40 rounded-full blur-2xl bottom-10 right-20 animate-float-2"></div>
+      <div class="absolute w-32 h-32 bg-sky-400/40 rounded-full blur-xl top-1/2 left-1/3 animate-float-3"></div>
     </div>
 
-    <div class="relative z-10 mt-20 max-w-2xl">
-      <h1
-        class="text-4xl font-bold md:text-5xl md:font-extrabold font-header text-gray-900"
-      >
-        Welcome to <span class="text-primary">Afuni’s Tickets App</span>
-      </h1>
-      <p class="mt-3 text-lg md:text-2xl font-body text-gray-700">
-        Manage your support tickets easily: create, track, and resolve requests
-        with clarity and speed.
-      </p>
+    <!-- Hero Section -->
+    <section class="relative z-10 flex flex-col justify-center items-center text-center px-4 pt-20 pb-16">
+      <div class="max-w-3xl animate-fadeInUp">
+        <h2 class="text-4xl font-bold md:text-5xl md:font-extrabold font-header text-gray-900">
+          Welcome to <span class="text-primary">Afuni's Tickets App</span>
+        </h2>
+        <p class="mt-4 text-lg md:text-2xl text-gray-700">
+          Manage your support tickets easily: create, track, and resolve requests
+          with clarity and speed.
+        </p>
 
-      <div class="mt-6 flex justify-center gap-4">
-        <router-link
-          to="/login"
-          class="bg-primary text-white px-6 py-3 rounded-lg shadow border border-white hover:scale-105 transition-transform"
-          >Login</router-link
-        >
-        <router-link
-          to="/signup"
-          class="bg-white text-primary px-6 py-3 rounded-lg shadow border border-primary hover:bg-primary hover:text-white hover:scale-105 transition-transform"
-          >Get Started</router-link
-        >
+        <div class="mt-8 flex justify-center gap-4">
+          <router-link
+            to="/login"
+            class="bg-primary text-white px-8 py-3 rounded-lg shadow-lg border border-white hover:scale-105 transition-transform"
+          >
+            Login
+          </router-link>
+          <router-link
+            to="/signup"
+            class="bg-white text-primary px-8 py-3 rounded-lg shadow-lg border border-primary hover:bg-primary hover:text-white hover:scale-105 transition-transform"
+          >
+            Get Started
+          </router-link>
+        </div>
+
+        <p class="mt-6 text-sm text-gray-500 animate-fadeInDelayed">
+          Empowering teams to stay connected and organized
+        </p>
       </div>
+    </section>
 
-      <p class="mt-6 text-sm text-gray-500">
-        Empowering teams to stay connected and organized
-      </p>
-    </div>
-  </section>
+    <!-- Features Section -->
+    <section class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="animate-fadeInUp">
+        <h3 class="text-3xl font-bold text-center text-gray-900 mb-12">
+          Powerful Features for Your Team
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition-all border-t-4 border-blue-500">
+            <div class="text-5xl mb-4">📝</div>
+            <h4 class="text-xl font-bold text-gray-800 mb-2">
+              Easy Ticket Creation
+            </h4>
+            <p class="text-gray-600">
+              Create and submit tickets in seconds with our intuitive interface. 
+              No complex forms, just simple and efficient.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition-all border-t-4 border-blue-600">
+            <div class="text-5xl mb-4">📊</div>
+            <h4 class="text-xl font-bold text-gray-800 mb-2">
+              Real-Time Tracking
+            </h4>
+            <p class="text-gray-600">
+              Monitor ticket status in real-time with live updates. 
+              Stay informed about every change instantly.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl hover:-translate-y-1 transition-all border-t-4 border-blue-700">
+            <div class="text-5xl mb-4">⚡</div>
+            <h4 class="text-xl font-bold text-gray-800 mb-2">
+              Lightning Fast
+            </h4>
+            <p class="text-gray-600">
+              Built for speed and performance. Access your tickets instantly 
+              without delays or loading screens.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="relative z-10 bg-gradient-to-b from-blue-50 to-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="animate-fadeInUp">
+          <h3 class="text-3xl font-bold text-center text-gray-900 mb-12">
+            Why Choose Afuni's Tickets?
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Benefit 1 -->
+            <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div class="text-4xl mb-3">🔐</div>
+              <h4 class="text-lg font-bold text-gray-800 mb-2">
+                Secure & Private
+              </h4>
+              <p class="text-gray-600 text-sm">
+                Your data stays safe with secure authentication and private ticket storage.
+              </p>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div class="text-4xl mb-3">💻</div>
+              <h4 class="text-lg font-bold text-gray-800 mb-2">
+                Fully Responsive
+              </h4>
+              <p class="text-gray-600 text-sm">
+                Works seamlessly on desktop, tablet, and mobile devices.
+              </p>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div class="text-4xl mb-3">🎨</div>
+              <h4 class="text-lg font-bold text-gray-800 mb-2">
+                Beautiful UI
+              </h4>
+              <p class="text-gray-600 text-sm">
+                Modern, clean interface designed for the best user experience.
+              </p>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div class="text-4xl mb-3">🚀</div>
+              <h4 class="text-lg font-bold text-gray-800 mb-2">
+                Zero Setup
+              </h4>
+              <p class="text-gray-600 text-sm">
+                Start managing tickets immediately. No complicated configuration needed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative z-10 py-16">
+      <div class="max-w-4xl mx-auto text-center px-4">
+        <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl shadow-2xl p-12 text-white animate-scaleIn">
+          <h3 class="text-3xl md:text-4xl font-bold mb-4">
+            Ready to Get Started?
+          </h3>
+          <p class="text-lg mb-8 text-blue-100">
+            Join thousands of teams already using Afuni's Tickets to streamline their support workflow.
+          </p>
+          <router-link
+            to="/signup"
+            class="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform shadow-lg"
+          >
+            Create Your Free Account
+          </router-link>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative z-10 bg-gray-900 text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <p class="text-gray-400">
+          © 2025 Afuni's Tickets App. Built for better support management.
+        </p>
+      </div>
+    </footer>
+  </div>
 </template>
 
 <script setup></script>
 
-<style>
-.animate-bounce-slow {
-  animation: bounce-slow 8s infinite ease-in-out;
-}
-
-@keyframes bounce-slow {
-  0%,
-  100% {
+<style scoped>
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
     transform: translateY(0);
   }
-  50% {
-    transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDelayed {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float-1 {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(20px) scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+@keyframes float-2 {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.03);
+    opacity: 0.9;
+  }
+}
+
+@keyframes float-3 {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(15px) scale(1.06);
+    opacity: 0.8;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.6s ease-out;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out;
+}
+
+.animate-fadeInDelayed {
+  animation: fadeInDelayed 2.2s ease-out;
+}
+
+.animate-float-1 {
+  animation: float-1 8s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float-2 10s ease-in-out infinite;
+}
+
+.animate-float-3 {
+  animation: float-3 9s ease-in-out infinite;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.6s ease-out;
 }
 </style>
