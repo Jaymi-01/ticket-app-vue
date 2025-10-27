@@ -1,5 +1,55 @@
-# Vue 3 + Vite
+# 🎟️ Afuni's Ticket app — Vue + Tailwind Ticket Management App
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+**Afuni's Ticket app** is a responsive and user-friendly ticket management system built with **Vue** and **Tailwind CSS**.  
+It allows users to **create**, **view**, **edit**, and **delete** tickets, with a simple authentication system and a clean, modern UI.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+---
+
+## 🚀 Features
+
+- ✨ **Beautiful Landing Page** with SVG wave hero background  
+- 🔐 **Authentication System** (Login & Signup with localStorage or mock API)  
+- 📊 **Dashboard** showing total, open, and resolved ticket stats  
+- 🧾 **Ticket Management** (CRUD: Create, Read, Update, Delete)  
+- ⚡ **Real-time Validation** and **Toast Notifications**  
+- 💻 **Responsive Design** (Desktop, Tablet & Mobile friendly)  
+- 🎨 **Tailwind CSS Styling** — modern and easily customizable  
+
+---
+
+## 🧠 Prerequisites
+
+Make sure you have installed:
+
+- **Node.js** (v18 or newer)
+- **npm** or **yarn**
+
+---
+
+## 💾 How to Clone & Run Locally
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/jaymi-01/ticket-app-vue.git
+cd ticket-app-vue
+```
+ ---
+
+ ## Install Dependencies
+
+Using npm:
+```bash
+npm install
+```
+---
+
+## Run the Development Server
+```bash
+npm run dev
+```
+Then open your browser at:
+```bash
+http://localhost:3000/
+
+
+
