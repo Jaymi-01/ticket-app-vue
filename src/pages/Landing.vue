@@ -4,7 +4,7 @@
     <header class="relative z-20 bg-transparent backdrop-blur-sm shadow-sm animate-slideDown">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div class="flex justify-between items-center">
-          <h1 class="text-2xl md:text-3xl font-bold text-primary">
+          <h1 class="text-2xl md:text-3xl font-bold text-white">
             Afuni's Tickets
           </h1>
           
